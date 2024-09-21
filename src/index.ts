@@ -8,6 +8,7 @@ import connectDB from "./db/connect.js";
 // middlewares
 import notfoundMiddleware from "./middleware/notfound.js";
 import errorHandlerMiddleware from "./middleware/error-handler.js";
+import { authenticateUser } from "./middleware/auth.js";
 
 // Express
 import express from "express";
@@ -15,7 +16,6 @@ import express from "express";
 // Routers
 import authRouter from "./routes/authRoute.js";
 import expenseRouter from "./routes/expenseRoute.js";
-import { authenticateUser } from "./middleware/auth.js";
 
 dotenv.config();
 const app = express();
