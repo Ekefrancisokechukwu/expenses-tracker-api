@@ -18,6 +18,10 @@ A simple API that allows users to sign up, log in, and manage their expenses. Us
 ## BaseURL
 -[baseURL](https://expenses-tracker-api-pwme.onrender.com/api/v1/)
 
+## ProjectURL
+-[baseURL](https://roadmap.sh/projects/expense-tracker-api)
+
+
 ## Authentication
 
 This API uses JWT for authentication. You need to pass the token in the `Authorization` header for protected routes.
