@@ -18,6 +18,9 @@ app.use(express.json());
 app.use(cookieParser(process.env.JWT_SECRET));
 app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/expenses", authenticateUser, expenseRouter);
+app.get("/", (req, res) => {
+    res.status(200).send("Home page");
+});
 app.use(notfoundMiddleware);
 app.use(errorHandlerMiddleware);
 const PORT = process.env.PORT || 5000;
